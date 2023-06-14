@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000DDC702A35846F006E2290 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DDC6F2A35846F006E2290 /* ViewModel.swift */; };
+		000DDC722A35DF23006E2290 /* WeatherInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000DDC712A35DF23006E2290 /* WeatherInfoViewModel.swift */; };
 		004672C72A34C58D0096F78B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672C62A34C58D0096F78B /* AppDelegate.swift */; };
 		004672C92A34C58D0096F78B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672C82A34C58D0096F78B /* SceneDelegate.swift */; };
 		004672CE2A34C58D0096F78B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004672CC2A34C58D0096F78B /* Main.storyboard */; };
@@ -18,10 +20,13 @@
 		004672E92A34D87B0096F78B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672E52A34D87B0096F78B /* ApiService.swift */; };
 		004672EB2A34D9540096F78B /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672EA2A34D9530096F78B /* HttpRequestHelper.swift */; };
 		004672ED2A34EA7D0096F78B /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004672EC2A34EA7D0096F78B /* Record.swift */; };
+		00FEA7492A39915500B62370 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FEA7482A39915500B62370 /* SearchVC.swift */; };
 		BAD8EF8B694F5321C10CDAE1 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5FA2F41D1A882E046B376B /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000DDC6F2A35846F006E2290 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		000DDC712A35DF23006E2290 /* WeatherInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoViewModel.swift; sourceTree = "<group>"; };
 		004672C32A34C58D0096F78B /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004672C62A34C58D0096F78B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		004672C82A34C58D0096F78B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +40,7 @@
 		004672E52A34D87B0096F78B /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		004672EA2A34D9530096F78B /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		004672EC2A34EA7D0096F78B /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		00FEA7482A39915500B62370 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		3D5FA2F41D1A882E046B376B /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6049DD6E82A05C86C2D8D8DA /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 		6508E6809BBD87D9929FDFF7 /* Pods-Test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.debug.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +122,8 @@
 		004672DE2A34D87B0096F78B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				000DDC6F2A35846F006E2290 /* ViewModel.swift */,
+				000DDC712A35DF23006E2290 /* WeatherInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -132,16 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				004672E12A34D87B0096F78B /* ViewController.swift */,
-				004672E22A34D87B0096F78B /* Cell */,
+				00FEA7482A39915500B62370 /* SearchVC.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		004672E22A34D87B0096F78B /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		004672E32A34D87B0096F78B /* Services */ = {
@@ -286,9 +287,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				004672E62A34D87B0096F78B /* Extension.swift in Sources */,
+				00FEA7492A39915500B62370 /* SearchVC.swift in Sources */,
+				000DDC702A35846F006E2290 /* ViewModel.swift in Sources */,
 				004672C72A34C58D0096F78B /* AppDelegate.swift in Sources */,
 				004672E92A34D87B0096F78B /* ApiService.swift in Sources */,
 				004672E82A34D87B0096F78B /* Connection.swift in Sources */,
+				000DDC722A35DF23006E2290 /* WeatherInfoViewModel.swift in Sources */,
 				004672E72A34D87B0096F78B /* ViewController.swift in Sources */,
 				004672EB2A34D9540096F78B /* HttpRequestHelper.swift in Sources */,
 				004672ED2A34EA7D0096F78B /* Record.swift in Sources */,
@@ -444,9 +448,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs to access your current location to display weather information on the screen.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display weather information on the screen.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -459,7 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -473,9 +480,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Test/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "This app needs to access your current location to display weather information on the screen.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your current location to display weather information on the screen.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -488,7 +498,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
